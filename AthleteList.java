@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class AthleteList here.
+ * AthleteList creates an array of Athlete objects and performs several functions using those objects.
  *
  * @author (your name)
  * @version (a version number or a date)
@@ -30,10 +30,10 @@ public class AthleteList
         Athletes d = new Athletes(22.36,22.71,22.27,22.46,22.89,"Colin");
         aList.add(d);
 
-        //The AthleteList Contructor Instantiates the ArrayList of Athletes objects, instantiates the 4 Athletes objects using the Athletes Contructor and then 
-        // adds each of the objects to aList
+        //The AthleteList Contructor instantiates the 4 Athletes objects using the Athletes Contructor and then adds each of the objects to aList
         // The double values entered into the contructor of Athletes represent each Athletes' 5 most recent times ran in the 200m dash
-        // ime1 represents the most recent and time5 represents the furthest back.
+        // time1 represents the most recent and time5 represents the furthest back
+        
     }
 
     //Accessor Methods
@@ -90,6 +90,8 @@ public class AthleteList
         this.d = d;
     }
 
+// printAll prints each Athlete's average time and the average for all athletes.
+    
     public void printAll()
     {
         System.out.println("Athlete 200 m Performance");
