@@ -161,7 +161,7 @@ public class GameDisplay implements ActionListener{
             }
         }}
     
-// addCharacter pulls specific stats from the Character objects of the CharacterGroup class and assigns them to panels on the game display
+// addCharacter pulls specific stats from the Character objects of Character class and assigns them to panels on the game display
     
     public void addCharacter()
     {
