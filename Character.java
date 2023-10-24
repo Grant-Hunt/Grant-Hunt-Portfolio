@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Character here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Goal: Character class creates Jlabel variables and changes labels based on parameter input.
+ * Language: Java
+ * 
+ * 
  */
 import java.util.Scanner;
 import java.awt.*;           //Use the Abstract Window Toolkit
