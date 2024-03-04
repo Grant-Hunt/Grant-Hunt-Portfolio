@@ -1,9 +1,9 @@
 
 /**
- * Goal: Create a display for a board game that shows character stats.
- * Language: Java
- * 
- * 
+ * Write a description of class GameDisplay here.
+ *
+ * @author Grant Hunt
+ * @version 6/15/23
  */
 
 import java.awt.*;           //Use the Abstract Window Toolkit
@@ -13,7 +13,6 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class GameDisplay implements ActionListener{
-   
     private ArrayList<Character> list = new ArrayList<Character>();
     private int x=0;
     private JFrame frame = new JFrame("Launch");
@@ -24,11 +23,9 @@ public class GameDisplay implements ActionListener{
     private JButton attack = new JButton("Attack");
     private JButton heal = new JButton("Heal");
     private JButton remove = new JButton("Remove");
+
     private JFrame frame2 = new JFrame("Game");
     private  Scanner input = new Scanner(System.in);
-
-// GameDisplay constructor creates a starting panel with buttons giving the user different actions.
-    
     public GameDisplay()
     {
         //panel.setBounds(10,30,150,200);    
@@ -62,12 +59,11 @@ public class GameDisplay implements ActionListener{
         frame.setTitle("Start Game");
         frame.setVisible(true);
     }
-    
+
     public static void main(String[] args) {
         new GameDisplay();
-    }
 
-// fillSelect adds object selections for panel
+    }
 
     public void fillSelect(JPanel x)
     {
@@ -80,8 +76,6 @@ public class GameDisplay implements ActionListener{
         x.add(select);
     }
 
-// playGame creates a larger panel for the character objects to be added onto
-
     public void playGame()
     {
         frame2.setSize(700,700);
@@ -89,8 +83,6 @@ public class GameDisplay implements ActionListener{
         frame2.setTitle("Game");
         frame2.setVisible(true);
     }
-
-    // actionPerformed defines what should be done once a button from the action panel is hit
 
     public void actionPerformed(ActionEvent event)
     {
@@ -160,9 +152,7 @@ public class GameDisplay implements ActionListener{
                 }
             }
         }}
-    
-// addCharacter pulls specific stats from the Character objects of Character class and assigns them to panels on the game display
-    
+
     public void addCharacter()
     {
         if(select.getSelectedItem().toString().equals("Tank"))
